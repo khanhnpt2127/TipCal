@@ -14,6 +14,7 @@
 		52CE78C71EEC17C200179FB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52CE78C51EEC17C200179FB1 /* LaunchScreen.storyboard */; };
 		52CE78D21EEC17C200179FB1 /* TipCalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CE78D11EEC17C200179FB1 /* TipCalTests.swift */; };
 		52CE78DD1EEC17C200179FB1 /* TipCalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CE78DC1EEC17C200179FB1 /* TipCalUITests.swift */; };
+		52CE78EB1EEC254500179FB1 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CE78EA1EEC254500179FB1 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		52CE78D81EEC17C200179FB1 /* TipCalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CE78DC1EEC17C200179FB1 /* TipCalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalUITests.swift; sourceTree = "<group>"; };
 		52CE78DE1EEC17C200179FB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52CE78EA1EEC254500179FB1 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				52CE78BC1EEC17C200179FB1 /* AppDelegate.swift */,
 				52CE78BE1EEC17C200179FB1 /* ViewController.swift */,
 				52CE78C01EEC17C200179FB1 /* Main.storyboard */,
+				52CE78EA1EEC254500179FB1 /* SettingsViewController.swift */,
 				52CE78C31EEC17C200179FB1 /* Assets.xcassets */,
 				52CE78C51EEC17C200179FB1 /* LaunchScreen.storyboard */,
 				52CE78C81EEC17C200179FB1 /* Info.plist */,
@@ -264,6 +267,7 @@
 			files = (
 				52CE78BF1EEC17C200179FB1 /* ViewController.swift in Sources */,
 				52CE78BD1EEC17C200179FB1 /* AppDelegate.swift in Sources */,
+				52CE78EB1EEC254500179FB1 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,15 +10,23 @@ import UIKit
 
 class ViewController: UIViewController {
 
+   
     @IBOutlet weak var tipLable: UILabel!
+    @IBOutlet weak var tipControl: UISegmentedControl!
     
     @IBOutlet weak var billTextField: UITextField!
     @IBOutlet weak var totalLable: UILabel!
    
-    @IBOutlet weak var tipControl: UISegmentedControl!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        if UserDefaults.standard.object(forKey: "tipIndex") != nil {
+            tipControl.selectedSegmentIndex = UserDefaults.standard.integer(forKey: "tipIndex")
+        }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
