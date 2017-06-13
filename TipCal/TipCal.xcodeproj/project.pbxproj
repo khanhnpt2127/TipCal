@@ -518,6 +518,7 @@
 				52CE78E31EEC17C200179FB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52CE78E41EEC17C200179FB1 /* Build configuration list for PBXNativeTarget "TipCalTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +527,7 @@
 				52CE78E61EEC17C200179FB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52CE78E71EEC17C200179FB1 /* Build configuration list for PBXNativeTarget "TipCalUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +536,7 @@
 				52CE78E91EEC17C200179FB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

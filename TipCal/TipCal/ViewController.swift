@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController {
 
    
@@ -21,6 +23,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        billTextField.becomeFirstResponder()
         
         if UserDefaults.standard.object(forKey: "tipIndex") != nil {
             tipControl.selectedSegmentIndex = UserDefaults.standard.integer(forKey: "tipIndex")
@@ -30,13 +33,13 @@ class ViewController: UIViewController {
     }
 
     
-    
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    
 
     
     @IBAction func onTap(_ sender: Any) {
@@ -44,15 +47,28 @@ class ViewController: UIViewController {
     }
    
     @IBAction func calculateTip(_ sender: Any) {
-        let tipPercentages = [0.18,0.2,0.25]
+        
         
         let bill = Double(billTextField.text!) ?? 0
+        
+        
+        let tipPercentages = [0.18,0.2,0.25]
+        
+        
+        
+        
+        
         let tip = bill * tipPercentages[tipControl.selectedSegmentIndex]
         let total = bill + tip
         
-        tipLable.text = String(format: "$%.2f", tip)
-        totalLable.text = String(format: "$%.2f", total)
+        tipLable.text = String(format: "$%.1f", tip)
+        totalLable.text = String(format: "$%.1f", total)
+        
+        
     }
+    
+    
+    
 
 }
 
