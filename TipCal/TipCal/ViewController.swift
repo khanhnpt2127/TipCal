@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var billTextField: UITextField!
     @IBOutlet weak var totalLable: UILabel!
    
-   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -90,7 +90,9 @@ class ViewController: UIViewController {
         
         
     }
-
+    
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -106,6 +108,20 @@ class ViewController: UIViewController {
     }
    
     @IBAction func calculateTip(_ sender: Any) {
+        
+        
+        var uiColorArray = [UIColor]()
+        uiColorArray.append(.red)
+        uiColorArray.append(.blue)
+        uiColorArray.append(.brown)
+        uiColorArray.append(.black)
+        
+        let randomIndex = Int(arc4random_uniform(UInt32(uiColorArray.count)))
+        
+        
+        UIView.animate(withDuration: 1, animations: {
+            self.view.backgroundColor = uiColorArray[randomIndex]
+        }, completion: nil)
         
         
         let bill = Double(billTextField.text!) ?? 0
